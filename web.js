@@ -8,5 +8,5 @@ app.get('/', (res, req) => {
 });
 
 app.listen(port, () => {
-    config.log(`Servier is Running. http://localhost:${port}`);
+    console.log(`Servier is Running. http://localhost:${port}`);
 })
