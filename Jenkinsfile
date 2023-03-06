@@ -6,12 +6,12 @@ node {
     }
 
     stage('Build image') {
-        app = docker.build("twinholic/gitops")
+        app = docker.build("odark/test")
     }
 
     stage('Test image') {
         app.inside {
-            sh 'echo "tests passed"'
+            sh 'echo "test passed"'
         }
     }
 
