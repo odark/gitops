@@ -1,3 +1,6 @@
+
+# syntax=docker/dockerfile:1
+
 FROM node:10
 
 WORKDIR /usr/src/app
