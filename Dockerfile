@@ -7,8 +7,10 @@ WORKDIR /usr/src/app
 
 COPY . .
 
-RUN npm install && \
-    npm install express
+RUN apt-get update && apt-get install -y docker && \
+    npm install && \
+    npm install express && \
+     
 
 EXPOSE 3000
 
