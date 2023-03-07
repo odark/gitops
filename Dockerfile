@@ -7,8 +7,7 @@ WORKDIR /usr/src/app
 
 COPY . .
 
-RUN apt-get update && apt-get install -y docker && \
-    npm install && \
+RUN npm install && \
     npm install express && \
      
 
