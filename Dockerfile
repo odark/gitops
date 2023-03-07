@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 COPY . .
 
 RUN npm install && \
-    npm install express && \
+    npm install express 
      
 
 EXPOSE 3000
