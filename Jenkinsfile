@@ -5,6 +5,14 @@ node {
         checkout scm
     }
 
+    stage('Env Variables') {
+        steps {
+            echo "The build number is ${env.BUILD_NUMBER}"
+            echo "You can also use \${BUILD_NUMBER} -> ${BUILD_NUMBER}"
+            sh 'echo "I can access $BUILD_NUMBER in shell comman as well.'
+        }
+    }
+
     stage('Build image') {
         app = docker.build("odark/test")
     }
